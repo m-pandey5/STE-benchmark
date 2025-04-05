@@ -1,13 +1,13 @@
-no_of_nodes,batch_size,data_type,encryption_mean_value,decryption_mean_value
-4,,u32,56.643 ms,77.858 ms
-4,,u64,58.307 ms,77.295 ms
-4,,u128,59.420 ms,88.226 ms
-4,,bytes32,57.328 ms,77.779 ms
-8,,u32,161.78 ms,196.39 ms
-8,,u64,163.38 ms,188.45 ms
-8,,u128,157.88 ms,186.81 ms
-8,,bytes32,157.34 ms,184.89 ms
-16,,u32,747.56 ms,776.85 ms
-16,,u64,728.70 ms,772.59 ms
-16,,u128,728.79 ms,773.01 ms
-16,,bytes32,743.43 ms,782.06 ms
+no_of_nodes,data_type,encryption_mean_value,decryption_mean_value
+4,u32,60.254 ms,81.911 ms
+4,u64,59.484 ms,77.295 ms
+4,u128,59.420 ms,88.226 ms
+4,bytes32,57.328 ms,77.779 ms
+8,u32,161.78 ms,196.39 ms
+8,u64,163.38 ms,188.45 ms
+8,u128,157.88 ms,186.81 ms
+8,bytes32,157.34 ms,184.89 ms
+16,u32,747.56 ms,776.85 ms
+16,u64,728.70 ms,772.59 ms
+16,u128,728.79 ms,773.01 ms
+16,bytes32,743.43 ms,782.06 ms

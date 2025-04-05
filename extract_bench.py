@@ -82,7 +82,7 @@ def extract_full_id(folder_path):
 
 # Function to extract parameters from full_id
 def extract_parameters_from_full_id(full_id):
-    """Parses the full_id string to extract encryption/decryption, no_of_nodes, batch_size, and data_type."""
+    """Parses the full_id string to extract encryption/decryption, no_of_nodes, data_type."""
     pattern = (
         r"scheme_SilentThreshold_(encryption|decryption)_no_of_nodes_(\d+)_data_(U\d+|u\d+|Bytes\d+)"
     )
@@ -181,7 +181,7 @@ def write_to_csv(output_file, grouped_data):
 
     # Write to CSV
     with open(output_file, mode='w', newline='') as csvfile:
-        fieldnames = ['no_of_nodes', 'batch_size', 'data_type', 'encryption_mean_value', 'decryption_mean_value']
+        fieldnames = ['no_of_nodes',  'data_type', 'encryption_mean_value', 'decryption_mean_value']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         writer.writeheader()
